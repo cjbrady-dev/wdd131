@@ -1,0 +1,16 @@
+#imgs {
+    border-radius: 100px;
+    border: 10px solid red;
+    margin: auto;
+}
+body {
+    text-align: center;
+    background-color: white;
+}
+h1, h2 {
+    color: red;
+}
+h1 {
+    background-color: silver;
+    border: 3px solid red
+}
