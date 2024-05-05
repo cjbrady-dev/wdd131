@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family:"Times New Roman", Times, serif;
+    max-width: 600px;
+}
+.list {
+    text-align: left;
+}
+.faded-border{
+    height: 5px;
+    margin: 20px 0;
+    border: none;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+h4 {
+    color:  #006EB6;
+}
+p, ol{
+    text-align: left;
+}
+img {
+    width: 150px
+
+}
+.Dark{
+    color: white;
+    background-color: black;
+    }
