@@ -78,6 +78,13 @@ header, footer {
     #two{
       grid-column: 2;
     }
+    .hide {
+      display: none;
+  }
+  
+  .menu-button {
+      display: none;
+  }
   }
   @media screen and (min-width: 700px) {
     .gallery {
@@ -103,11 +110,59 @@ header, footer {
     #two{
       grid-column: 2;
     }
+    .menu-item {
+        display: none;
+    }
+    .menu-button {
+        display: inline-block;
+    }
   
   }
+  /*
+  
+/* Add this to your CSS file */
+.hide {
+  display: none;
+}
 
+.menu-button {
+  display: none;
+}
 
+/* Add responsive styles */
+@media (max-width: 1000px) {
+  .menu-item {
+      display: none;
+  }
+  .menu-button {
+      display: inline-block;
+  }
+}
 
+/* Viewer styles */
+.viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: grid;
+  place-items: center;
+  z-index: 10;
+}
 
+.viewer img {
+  max-height: 100%;
+}
 
-
+.close-viewer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
