@@ -160,8 +160,22 @@
     }
   }
   
-No text detected.
-Try a screenshot instead.
-0
-:
-00
+/* Rest of your existing CSS */
+
+/* Grid layout for participants */
+.participants {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.participants button {
+  grid-column: span 2; /* Make button take up both columns */
+  margin-top: 20px;
+}
+/* Rest of your existing CSS */
+
+/* Summary section */
+#summary {
+  display: none; /* Hide the summary section initially */
+}
