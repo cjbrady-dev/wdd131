@@ -7,9 +7,9 @@ function validateForm(event) {
   e.preventDefault()
   // You should always give feedback to the user about what whet wrong so they can fix it. We will store the error messages here
   const errors = [];
-  // start by assuming the form is valid.
+
   let isValid = true;
-  // add our validations here
+  //validations here
   if (theForm.paymentMethod.value === "creditCard") {
     // normally we would need contact the credit card company to verify the number...we are only going to allow one number as valid to keep things simple.
     if (theForm.creditCardNumber.value !== "1234123412341234") {
