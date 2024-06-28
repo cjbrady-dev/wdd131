@@ -3,39 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Recipe Book">
+    <meta property="og:type" content="Recipe Book" />
+    <meta property="og:description" content="Seach from a collection of Recipes.">
+    <meta property="og:image" content="_images/images/recipe-book.png">
+    <meta property="og:url" content="week9/recipes/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+
     <title>Recipe Book</title>
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="main.mjs" defer></script>
 </head>
 <body>
     <header>
-        <img src="_images/images/recipe-book.png" alt="Recipe Book Logo">
+        <h1>Recipe Book</h1>
+        <!-- The header will contain the logo and name of the site. -->
+        <img id="logo" src="_images/images/recipe-book.png" alt="Recipe Book Logo">
     </header>
-
-    <div class="myImages">
-        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
-        <a href="#"><img src="_images/images/instagram_icon.svg" alt="Instagram icon"></a>
-        <a href="#"><img src="_images/images/youtube_icon.svg" alt="YouTube icon"></a>
-        <a href="#"><img src="_images/images/pinterest_icon.svg" alt="Pinterest icon"></a>
-        <a href="#"><img src="_images/images/apple-crisp.jpg" alt="Pinterest icon"></a>
-
-        <a href="#"><img src="_images/images/black-beans-and-rice.jpg" alt="Pinterest icon"></a>
-        <a href="#"><img src="_images/images/chicken-curry.webp" alt="Pinterest icon"></a>
-        <a href="#"><img src="_images/images/chocolate-chip-cookies.jpg" alt="Pinterest icon"></a>
-        <a href="#"><img src="_images/images/escalopes-de-poulet-a-la-creme.webp" alt="Pinterest icon"></a>
-        <a href="#"><img src="_images/images/german-gooseberry-cake.jpg" alt="Pinterest icon"></a>
-        <a href="#"><img src="_images/images/recipe-book.png" alt="Pinterest icon"></a>
-        <a href="#"><img src="_images/images/roasted-potatoes.webp" alt="Pinterest icon"></a>
-        <a href="#"><img src="_images/images/search.svg" alt="Pinterest icon"></a>
-        <a href="#"><img src="_images/images/sweet-potato-waffle-md.jpg" alt="Pinterest icon"></a>
-    </div>
-
     <main>
-        <div id="recipe-list"></div>
+        <div class="container">
+        <div class="search-container">
+            <form>
+            <input type="search" class="search-box" placeholder="Search Recipe">
+            <button class="search-button">Search</button>
+            </form>
+        </div>
+
+
+
+        <span
+                class="rating"
+                role="img"
+                aria-label="Rating: 4 out of 5 stars"
+            >
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">☆</span>
+        </span>
+    </div>
+    
+
     </main>
 
     <footer>
         <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
     </footer>
 </body>
 </html>
+
+
+<!-- <a href="#"><img src="_images/images/black-beans-and-rice.jpg" alt="Pinterest icon"></a>
+<a href="#"><img src="_images/images/chicken-curry.webp" alt="Pinterest icon"></a>
+<a href="#"><img src="_images/images/chocolate-chip-cookies.jpg" alt="Pinterest icon"></a>
+<a href="#"><img src="_images/images/escalopes-de-poulet-a-la-creme.webp" alt="Pinterest icon"></a>
+<a href="#"><img src="_images/images/german-gooseberry-cake.jpg" alt="Pinterest icon"></a>
+<a href="#"><img src="_images/images/recipe-book.png" alt="Pinterest icon"></a>
+<a href="#"><img src="_images/images/roasted-potatoes.webp" alt="Pinterest icon"></a>
+<a href="#"><img src="_images/images/search.svg" alt="Pinterest icon"></a>
+<a href="#"><img src="_images/images/sweet-potato-waffle-md.jpg" alt="Pinterest icon"></a> -->

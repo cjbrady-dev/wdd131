@@ -1,70 +1,60 @@
+header h1{
+    background-color: gray;
+    border: 15px black;
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    background-color: #f8f9fa;
-    padding: 20px;
-    text-align: center;
-}
-
-header img {
-    max-width: 100px;
-}
-
-.myImages {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-.myImages a {
-    margin: 0 10px;
-}
-
-.myImages img {
-    width: 40px;
-    height: 40px;
-}
-
-main {
-    padding: 20px;
-}
-
-#recipe-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    flex-direction: column;
+    border: 15px black;
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#logo {
+    size: 100%;
+}
+  
+  .item {
+    flex: 1 1 200px; /* Grow and shrink, with a base width of 200px */
+  }
+  
+img {
+	max-width: 100%;
 }
 
-.recipe {
-    border: 1px solid #ddd;
-    padding: 10px;
-    max-width: 300px;
+@import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");
+:root {
+--primary-color: #1B98E0;
+--secondary-color: #59c3c3;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: "Amatic SC";
 }
+@media (min-width: 600px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: 15px black;
+        background-color: grey;
+        font-family: Arial, Helvetica, sans-serif;
 
-.recipe img {
-    width: 100%;
-}
+    }
 
-.recipe h2 {
-    font-size: 1.5em;
-    margin: 0;
 }
+@media (max-width: 960px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: 15px black;
+        background-color: grey;
+        font-family: Arial, Helvetica, sans-serif;
 
-footer {
-    background-color: #f8f9fa;
-    padding: 10px;
-    text-align: center;
-}
+    }
 
-footer a {
-    color: #007bff;
-    text-decoration: none;
 }
+/* This will probably be around 600px. Let's add the first breakpoint there. Since we are using Flexbox this time around we can simply add a rule to change the flex-direction from column to row.
+
+Next we will keep widening the screen to watch for when the layout starts looking off again. The next point shuold be somewhere around 960px. Wider than this and the page looks too stretched out. Set this as the widest our layout can grow with another media query. */
