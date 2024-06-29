@@ -2,6 +2,9 @@ header h1{
     background-color: gray;
     border: 15px black;
 }
+img {
+    size: 25%;
+}
 body {
     display: flex;
     flex-wrap: wrap;
