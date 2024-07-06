@@ -5,10 +5,10 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #396E94;
-  --secondary-color: #E7C24F;
-  --accent1-color: #86AA77;
-  --accent2-color: white;
+  --primary-color: #982727;
+  --secondary-color: #000000;
+  --accent1-color: #F5EEEE;
+  --accent2-color: #FFFFFF;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "EB Garamond";
@@ -24,10 +24,10 @@ Fonts are separated by a | */
   ); /* paragraph text on a white background */
   --paragraph-color-on-color: white; /* paragraph text on a colored background */
   --paragraph-background-color: var(--primary-color);
-  --nav-link-color: var(--primary-color);
-  --nav-background-color: var(--secondary-color);
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: var(--primary-color);
+  --nav-link-color: var(--accent1-color);
+  --nav-background-color: var(--primary-color);
+  --nav-hover-link-color: var(--secondary-color);
+  --nav-hover-background-color: var(--accent1-color);
 }
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
@@ -57,7 +57,7 @@ h2 {
 hr {
   height: 3px;
   margin: 35px 0;
-  background: var(--accent1-color);
+  background: var(  --secondary-color);
 }
 header {
   padding: 1em;
@@ -91,12 +91,15 @@ p {
 
 .primary {
   background-color: var(--primary-color);
+  color: #F5EEEE;
 }
 .secondary {
   background-color: var(--secondary-color);
+  color: #F5EEEE;
 }
 .accent1 {
   background-color: var(--accent1-color);
+
 }
 .accent2 {
   background-color: var(--accent2-color);
