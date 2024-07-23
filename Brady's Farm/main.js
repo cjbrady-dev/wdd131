@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             image: 'images/_wilbur.jpg',
-            name: 'Item 1',
+            name: 'Item 2',
             description: 'Name: Wilbur Senior,<br>Sire: Wilbur The Great,<br>Mother: Jessie,<br>Age: 7 years,<br>Breed: Angus,<br>Price: $5500.00'
         }
     ];
